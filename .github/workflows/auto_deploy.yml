@@ -35,4 +35,4 @@ jobs:
         run: npm install --global surge
         
       - name: deploying using search
-        run: surge ./ bootcamp-shaukat.surge.sh --token "d15a6b0bcef2580fbda80dba82b64024" #${{ secrets.SURGE_TOKEN }}   # ./ is the github current directory and bootcamp-shaukat.surge.sh is remote URL on surge, toke is for safety that no one can access your site 
+        run: surge ./ bootcamp-shaukat.surge.sh --token ${{ secrets.SURGE_TOKEN }}   # ./ is the github current directory and bootcamp-shaukat.surge.sh is remote URL on surge, toke is for safety that no one can access your site 
